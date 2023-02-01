@@ -6,3 +6,4 @@ from .models import Patient
 class ListPatients(ListView):
     model = Patient
     template_name = 'index.html'
+    context_object_name = 'patients'

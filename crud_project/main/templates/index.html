@@ -6,5 +6,15 @@
         <div class="right_col" role="main">
           <h1>HOLA</h1>
         </div>
+        <div class="right_col" role="main">
+          <h3>
+            <ul>
+              {% for patient in patients %}
+                <li>{{ patient.surname }}</li>
+                <li>{{ patient.attended_by }}</li>
+              {% endfor %}
+            </ul>
+          </h3>
+        </div>
         <!-- /page content -->
 {% endblock %}
